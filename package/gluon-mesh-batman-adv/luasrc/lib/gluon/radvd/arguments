@@ -34,6 +34,7 @@ end
 if site.radvd() then
 	if site.radvd.preferred_lifetime() then
 		io.write(" --preferred-lifetime " .. site.radvd.preferred_lifetime())
+		io.write(" --default-lifetime " .. site.radvd.preferred_lifetime())
 	end
 	if site.radvd.valid_lifetime() then
 		io.write(" --valid-lifetime " .. site.radvd.valid_lifetime())
